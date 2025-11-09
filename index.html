@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Oceanus Fishing Ltd.</title>
+  <meta name="description" content="Oceanus Fishing Ltd. – sustainable, friendly, and professional fishing company." />
+  <style>
+    :root{--bg:#0b1625;--card:#0d1c2f;--accent:#00b3c6;--muted:#99aabb;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:#e6eef6;background:linear-gradient(180deg,#071626 0%,#0a1d33 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700}
+    .logo .dot{width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 18px rgba(0,179,198,0.22)}
+    .nav-links{display:flex;gap:14px}
+    .nav-links a{color:var(--muted);text-decoration:none;font-weight:600}
+    header{padding:48px 0;text-align:left}
+    h1{font-size:clamp(28px,4vw,44px);margin:0 0 12px}
+    p.lead{color:var(--muted);margin:0 0 22px;line-height:1.5}
+    .cta{display:inline-block;background:var(--accent);color:#072028;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+    section{margin-top:48px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:26px;border-radius:14px;backdrop-filter:blur(6px);box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    footer{padding:26px 0;color:var(--muted);text-align:center}
+    @media (max-width:880px){.nav-links{display:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo"><div class="dot"></div>Oceanus Fishing Ltd.</div>
+      <div class="nav-links">
+        <a href="#about">About Us</a>
+        <a href="#fleet">Fleet</a>
+        <a href="#sustainability">Sustainability</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header>
+      <div class="card">
+        <h1>Welcome to Oceanus Fishing Ltd.</h1>
+        <p class="lead">We’re a friendly, family-oriented fishing company committed to sustainable practices and bringing the freshest catch from ocean to plate.</p>
+        <a class="cta" href="#about">Learn More</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About Us</h2>
+        <p class="lead">At Oceanus Fishing Ltd., we believe that great seafood starts with respect for the sea. Our dedicated crew combines decades of experience with modern, sustainable fishing techniques to protect marine life and provide the best quality fish.</p>
+      </section>
+
+      <section id="fleet">
+        <h2>Our Fleet</h2>
+        <p class="lead">Our vessels are equipped with the latest navigation and safety technology, ensuring efficient and responsible fishing operations. From small boats to larger trawlers, our fleet is the heart of Oceanus Fishing Ltd.</p>
+      </section>
+
+      <section id="sustainability">
+        <h2>Sustainability</h2>
+        <p class="lead">We’re deeply committed to protecting ocean ecosystems. Through careful quota management, selective fishing methods, and eco-friendly gear, we help preserve marine biodiversity for future generations.</p>
+      </section>
+
+  <section id="contact">
+  <h2>Contact</h2>
+  <p class="lead">We’d love to hear from you! Whether you’re looking for partnership opportunities or just want to learn more about our company, reach out anytime.</p>
+
+  <div class="card" style="margin-top:16px;">
+    <p><strong>Phone:</strong> <a href="tel:+00353862655830">+00353 (86) 265-5830</a></p>
+    <p><strong>Email:</strong> <a href="mailto:eoin@oceanusfishing.com">eoin@oceanusfishing.com</a></p>
+    <p><strong>Address:</strong> The Harbour, Duncannon, New Ross, co. Wexford, Ireland (y34rf76)</p>
+  </div>
+</section>
+    </main>
+
+    <footer>
+      <div class="muted">© <span id="year"></span> Oceanus Fishing Ltd. — sailing toward a sustainable future 🌊</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
